@@ -96,7 +96,7 @@ Response receive_msg(Request &req) {
 int main() {
     time_t now = time(NULL);
     server.aof_last_shift_time = now;
-    server.aof_shift_interval = 5;
+    server.aof_shift_interval = 3600;
     server.log_path = "/tmp/";
 
     HttpServer http_server;
